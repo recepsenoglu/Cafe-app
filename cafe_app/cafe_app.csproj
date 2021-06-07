@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4A51868E-17C4-4CAE-94B4-6387BA6478C2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>cafe_app</RootNamespace>
+    <AssemblyName>cafe_app</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formMasaSec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formMasaSec.Designer.cs">
+      <DependentUpon>formMasaSec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formGarsonSec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formGarsonSec.Designer.cs">
+      <DependentUpon>formGarsonSec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formKasa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formKasa.Designer.cs">
+      <DependentUpon>formKasa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formOdemeAl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formOdemeAl.Designer.cs">
+      <DependentUpon>formOdemeAl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formSef.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formSef.Designer.cs">
+      <DependentUpon>formSef.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formSiparisAyrintilar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formSiparisAyrintilar.Designer.cs">
+      <DependentUpon>formSiparisAyrintilar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formSiparisEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formSiparisEkle.Designer.cs">
+      <DependentUpon>formSiparisEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kafe.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formMasaSec.resx">
+      <DependentUpon>formMasaSec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formGarsonSec.resx">
+      <DependentUpon>formGarsonSec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formKasa.resx">
+      <DependentUpon>formKasa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formOdemeAl.resx">
+      <DependentUpon>formOdemeAl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formSef.resx">
+      <DependentUpon>formSef.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formSiparisAyrintilar.resx">
+      <DependentUpon>formSiparisAyrintilar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formSiparisEkle.resx">
+      <DependentUpon>formSiparisEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\garson.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chef.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sef.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seff.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\garson1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kasa.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
